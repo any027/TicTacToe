@@ -12,11 +12,13 @@ OPEN = 0
 PLAYER = 1
 COMPUTER = 2
 
+
 class Board():
     board = []
     board_row = 3
     board_column = 3
     currentTurn = None
+    firstTurn = False
     
     #when we create a board, all we really need to be sure of is 
     #that the board is empty.
@@ -77,6 +79,18 @@ class Board():
     def setTurn(self, player):
         self.currentTurn = player
         
+    def setFirstTurn(self, turn):
+        if turn is PLAYER:
+            print("Player First")
+            self.firstTurn = True
+        else:
+            print("Computer First")
+            self.firstTurn = False
+    
+    def getFirstTurn(self):
+        return self.firstTurn
+    
+            
     #nextTurn simply changes the player of the game.
     #nextTurn does not take in anything
 
