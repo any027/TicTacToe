@@ -1,6 +1,10 @@
 # TicTacToe
-A console Tic Tac Toe game made for an interview conded in Python.
+A console Tic Tac Toe game made for an interview coded in Python.
 
-This game currently only supports the USER to go first, and the computer will ONLY do random moves.
-I will be researching into making a BETTER ai computer and BETTER implementation.
-Alpha Version.
+Currently supports going first or going second, but the computer is still a random player.
+Considering researching to make an unbeatable AI.
+
+To play, simply have both files in a directory and run 
+python TicTacToe.py
+
+Beta  Version.
